@@ -1,10 +1,5 @@
 
 #!/usr/bin/env python
-# rpi_ws281x library strandtest example
-# Author: Tony DiCola (tony@tonydicola.com)
-#
-# Direct port of the Arduino NeoPixel library strandtest example.  Showcases
-# various animations on a strip of NeoPixels.
 
 import wave
 import time
@@ -12,6 +7,7 @@ from rpi_ws281x import *
 import argparse
 import sys
 import pyaudio
+from scipy.fft import fft
 
 # LED strip configuration:
 LED_COUNT      = 50      # Number of LED pixels.
